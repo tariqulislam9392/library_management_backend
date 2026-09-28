@@ -1,7 +1,4 @@
 
-from email.policy import HTTP
-from os import close
-
 from typing import Annotated
 
 from fastapi.responses import JSONResponse
