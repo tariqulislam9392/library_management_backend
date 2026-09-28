@@ -7,8 +7,7 @@ from typing import Annotated
 from fastapi.responses import JSONResponse
 from router import auth,admin
 from router.auth import get_current_user
-from pytest import Session
-
+from sqlalchemy.orm import Session
 from database import engine,SessionLocal
 
 from fastapi import Depends, FastAPI, HTTPException
