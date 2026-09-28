@@ -1,5 +1,4 @@
-from fastapi import FastAPI,APIRouter , Depends
-from httpx import get
+from fastapi import APIRouter , Depends
 from pydantic import BaseModel, Field
 from models import Users 
 from fastapi.responses import JSONResponse
@@ -7,7 +6,7 @@ from sqlalchemy.orm import Session
 from typing import Annotated
 from database import SessionLocal
 from fastapi.security import OAuth2PasswordRequestForm,OAuth2PasswordBearer
-from jose import jwt,JWTError
+from jose import jwt
 from datetime import timedelta,datetime,timezone
 from fastapi import HTTPException
 from typing import Optional
